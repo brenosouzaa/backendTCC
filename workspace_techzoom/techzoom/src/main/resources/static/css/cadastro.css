@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Rubik:wght@600&display=swap');
+
+/* Definição das cores */
+:root {
+    --cor-roxo: #551a8b;
+    --cor-rosa: #00000080;
+}
+
+/* Estilo do corpo da página */
+body {
+    background: linear-gradient(to bottom, #c8a2c8, #551a8b);
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px #00000080;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+label {
+    /* Restante do código... */
+}
+
+input#nome {
+    width: 100%;
+    max-width: 300px; /* Ajuste o valor conforme necessário */
+}
+
+input#nome,
+input[type="text"],
+
+input[type="number"],
+textarea {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 4px;
+    background-color: var(--cor-roxo);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #5B4E77;
+}
+
+/* Estilo da tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+th {
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+td {
+    font-size: 20px;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(152, 58, 240, 0.4);
+}
+
+.modal-content {
+    background-color: #00000080;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-roxo);
+    max-width: 400px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: var(--cor-roxo);
+    float: right;
+    font-size: 28px;
+}
